@@ -304,23 +304,56 @@ section#mix-card li+li {
   margin-left: 10px;
 }
 
-section#interation {
-  display: flex;
+section#new {
+  margin-top: -5%;
+  padding: 5%;
 }
 
-section#interaction div#incorporation {
+section#new div#incorporation {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 1em;
 }
 
-footer>div#animation {
-  display: flex;
-  justify-content: center;
+section#new>h2 {
+  margin-left: 6%;
+}
+
+section#new>h3 {
+  margin-left: 6%;
+}
+
+section#new p {
+  margin-left: 6%;
+}
+
+section#today>h2 {
+  margin-left: 6%;
+}
+
+section#today {
+  margin-top: -5%;
+  padding: 5%;
+}
+
+section#today p {
+  margin-left: 6%;
+}
+
+section#rotine {
+  margin-top: -5%;
+  padding: 5%;
+}
+
+section#rotine>h2 {
+  margin-left: 6%;
+}
+
+section#rotine p {
+  margin-left: 6%;
 }
 
 footer div {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
 }

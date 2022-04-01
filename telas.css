@@ -134,6 +134,19 @@
     padding: 0;
     text-align: center;
   }
+
+  footer div {
+    display: initial;
+  }
+
+  footer div p {
+    justify-content: center;
+  }
+
+  footer div p {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
 }
 
 @media (min-width: 1024px) {
