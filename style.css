@@ -161,9 +161,10 @@ section div.banner>picture img {
   margin: 0 auto 0 auto;
   width: 80vw;
   height: fit-content;
+  align-items: center;
 }
 
-header>div#container img {
+header>div#container>div>img {
   height: 48px;
   width: 48px;
 }
@@ -255,11 +256,11 @@ ul {
 
 section#mix-card {
   margin-top: -5%;
-  padding: 5% 2% 0 2%;
+  padding: 5%;
 }
 
 section#mix-card a>h2 {
-  color: #45CB85;
+  color: #26764c;
   padding: 10px 0;
   text-transform: lowercase;
   letter-spacing: 2px;
@@ -268,7 +269,7 @@ section#mix-card a>h2 {
 
 
 section#mix-card ul li img {
-  width: 18em;
+  width: 12em;
   border-radius: 10px;
   opacity: .6;
 }
@@ -282,15 +283,16 @@ section#mix-card ul li>div {
 #carousel-2 {
   display: flex;
   overflow-x: auto;
-  margin: 0 2%;
+  margin-left: 6%;
   align-items: center;
+  margin-right: 6%;
 }
 
 section#mix-card>h2 {
-  color: #AF4BF2;
+  color: #9c44d7;
   text-transform: uppercase;
   font-size: 1.5em;
-  margin: 4px 2%;
+  margin: 4px 2% 4px 6%;
   letter-spacing: 2px;
 }
 
@@ -300,4 +302,15 @@ section#mix-card li {
 
 section#mix-card li+li {
   margin-left: 10px;
+}
+
+section#interation {
+  display: flex;
+}
+
+section#interaction div#incorporation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1em;
 }
