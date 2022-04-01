@@ -48,8 +48,9 @@ h2 {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Epilogue-Regular";
+  font-family: "arial";
   min-height: 4000px;
+  background-color: #F1BBF2;
 }
 
 body a {
@@ -71,14 +72,14 @@ main header.header-top-site {
   position: fixed;
   z-index: 10;
   transition-duration: 0.5s;
-  background: linear-gradient(#15313100, #15313100);
+  background: linear-gradient(#BC6BF200, #BC6BF200);
 }
 
 main header.header-top-site.scroll {
   top: -80px;
   transform: translateY(80px);
   transition-duration: 0.5s;
-  background: linear-gradient(#153131, #28293e00);
+  background: linear-gradient(#4F22F280, #4F22F200);
 }
 
 /* especificidade CSS */
@@ -92,12 +93,15 @@ main header>div#container {
 main header>div#container>div {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 main header>div#container>div>p {
   margin: 0 0 0 14px;
-  font-family: "Epilogue-Bold";
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 1.5em;
+  letter-spacing: .2em;
 }
 
 main header button {
@@ -110,7 +114,6 @@ main header button {
 
 main #hero {
   width: 100%;
-  background-color: #153131;
   padding-top: 80px;
   top: 0;
 }
@@ -137,11 +140,18 @@ main #hero {
     height: fit-content;
   } */
 
+section div.banner>picture a {
+  margin: .2em;
+  border: solid 0.1em;
+  border-radius: 0.4em;
+}
+
 section div.banner>picture img {
   cursor: pointer;
   width: 34vh;
-  padding: 0.2em;
   border-radius: 8%;
+  border: solid #F1BBF2 1px;
+  padding: .4em;
 }
 
 #carousel {
@@ -172,7 +182,7 @@ main #hero h1 {
 }
 
 main #hero h2 {
-  color: #ffffff;
+  color: #4F22F2;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 1.5em;
@@ -210,12 +220,12 @@ main #hero .button-group button {
   border: none;
   border-radius: 5px;
   font-size: 1em;
-  color: #fff;
+  color: #72F2F2;
 }
 
 /* pseudo seletor. : significa um seletor condicional */
 main #hero .button-group button:first-child {
-  background-color: #45CB85;
+  background-color: #4F22F2;
   font-size: 0.75em;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -244,9 +254,8 @@ ul {
 }
 
 section#mix-card {
-  background-color: #153131;
   margin-top: -5%;
-  padding: 5%;
+  padding: 5% 2% 0 2%;
 }
 
 section#mix-card a>h2 {
@@ -266,18 +275,29 @@ section#mix-card ul li img {
 
 section#mix-card ul li>div {
   padding: 10px;
+  border: solid #BC6BF2 1px;
+  border-radius: .4em;
 }
 
 #carousel-2 {
   display: flex;
   overflow-x: auto;
-  margin: 0 auto 0 auto;
+  margin: 0 2%;
+  align-items: center;
 }
 
 section#mix-card>h2 {
-  color: #fff;
+  color: #AF4BF2;
   text-transform: uppercase;
   font-size: 1.5em;
-  margin: 4px 10px;
+  margin: 4px 2%;
   letter-spacing: 2px;
+}
+
+section#mix-card li {
+  margin-bottom: 1em;
+}
+
+section#mix-card li+li {
+  margin-left: 10px;
 }

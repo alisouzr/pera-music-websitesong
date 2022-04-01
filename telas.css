@@ -53,6 +53,10 @@
 
   main header>#container nav a {
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: bold;
+    font-size: 1em;
   }
 
   main header>#container>a {
@@ -124,7 +128,7 @@
   }
 
   main #hero h2 {
-    color: #ffffff;
+    color: #BC6BF2;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.5em;
