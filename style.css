@@ -314,3 +314,13 @@ section#interaction div#incorporation {
   justify-content: center;
   margin-left: 1em;
 }
+
+footer>div#animation {
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
