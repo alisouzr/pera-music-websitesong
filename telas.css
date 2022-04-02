@@ -15,10 +15,11 @@
 @media (min-width: 960px) {
   main header button {
     padding: 10px;
-    border: solid #F1BBF2 2px;
+    border: initial;
     width: initial;
     cursor: pointer;
     color: #fff;
+    letter-spacing: .1em;
   }
 
   main header button.show-desktop>img {
