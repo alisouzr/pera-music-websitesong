@@ -338,6 +338,7 @@ section#today>h2 {
 section#today {
   margin-top: -5%;
   padding: 5%;
+  padding-bottom: 2%;
 }
 
 section#today p {
