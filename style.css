@@ -360,6 +360,52 @@ section#rotine p {
   color: #525252;
 }
 
+
+section#today div#text {
+  margin-left: 4%;
+  width: 100%;
+}
+
+section#today div div>h4 {
+  margin: initial;
+  font-weight: bold;
+  font-size: .6em;
+}
+
+section#today div div p {
+  margin: initial;
+  font-size: .6em;
+  margin-top: 1%;
+}
+
+section#today #img {
+  opacity: 80%;
+  width: 6em;
+  height: 6em;
+}
+
+section#today div#list-song {
+  margin: 2% 6%;
+  display: flex;
+  background-color: #00000030;
+  align-items: center;
+}
+
+section#today div#list-song>div#img {
+  display: flex;
+}
+
+section#today img#play {
+  width: 30px;
+}
+
+section#today div#list-song div:nth-child(3) {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 footer div {
   text-align: center;
   color: #525252;
