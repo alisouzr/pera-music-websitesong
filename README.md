@@ -6,7 +6,3 @@
 Esse site foi criado a partir de um desafio, no qual deveria ser criado um site de música, utilizei como base o Spotify -que utiliza bastante as playlists criadas para cada usuário, usei uma API do spotify para adicionar uma playlist no site e tambem fiz uso de alguns recursos de animações, ele foi criado com o objetivo de ser responsivo na maior parte dos dispositivos e para realização da tarefa. Design do projeto foi todo realizado por mim, espero que goste !
 
 Acesse aqui -> https://alisouzr.github.io/peraMusic/
-
-
-![PERA](https://user-images.githubusercontent.com/79667413/161609360-dc59eadc-1dcf-4b50-8bec-53639676ba8e.svg)
--logo criada por aliny souza @alisouzr-
