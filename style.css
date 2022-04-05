@@ -79,7 +79,7 @@ main header.header-top-site.scroll {
   top: -80px;
   transform: translateY(80px);
   transition-duration: 0.5s;
-  background: linear-gradient(#4F22F280, #4F22F200);
+  background: #9c44d7;
 }
 
 /* especificidade CSS */
