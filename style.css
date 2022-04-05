@@ -50,7 +50,7 @@ body {
   padding: 0;
   font-family: "arial";
   min-height: 400px;
-  background-color: #F1BBF2;
+  background-color: #f4d6f5;
 }
 
 body a {
@@ -343,7 +343,7 @@ section#today {
 
 section#today p {
   margin-left: 6%;
-  color: #525252;
+  color: #201919;
 }
 
 section#rotine {
@@ -367,15 +367,15 @@ section#today div#text {
   width: 100%;
 }
 
-section#today div div>h4 {
+section#today div div h4 {
   margin: initial;
   font-weight: bold;
-  font-size: .6em;
+  font-size: .54em;
 }
 
-section#today div div p {
+section#today div div>h3 {
   margin: initial;
-  font-size: .6em;
+  font-size: .8em;
   margin-top: 1%;
 }
 
@@ -389,7 +389,7 @@ section#today #img {
 section#today div#list-song {
   margin: 2% 6%;
   display: flex;
-  background-color: #00000030;
+  background-color: #c46bff;
   align-items: center;
 }
 
