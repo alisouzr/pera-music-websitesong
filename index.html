@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="description" content="a music website project">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="telas.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/telas.css">
     <link rel="icon" href="PERA.svg" sizes="any" type="image/svg+xml">
     <title>Pera Music</title>
 </head>
@@ -17,7 +17,7 @@
             <div id="container">
                 <div>
                     <img src="PERA.svg" alt="Logo Pera Music">
-                    <p>Pera Music</p>
+                    <p id="title">Pera Music</p>
                 </div>
                 <button title="menu" type="button" class="show-mobile">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFF">
@@ -45,16 +45,6 @@
         <section id="hero">
             <div class="banner">
                 <h2>Listen Now</h2>
-                <!-- <picture id="carousel">
-                    <img src="./images/anavitoria.jpg" alt="" />
-                    <img src="./images/gloria.jpg" alt="" />
-                    <img src="./images/jao.jpg" alt="" />
-                    <img src="./images/selene.jpg" alt="" />
-                    <img src="./images/troye.jpg" alt="" />
-                    <img src="./images/billie.jpg" alt="" />
-                    <img src="./images/conan.jpg" alt="" />
-                    <img src="./images/zendaya.jpg" alt="" />
-                </picture> -->
                 <picture id="carousel">
                     <a aria-label="ANAVITÓRIA" href="https://www.youtube.com/watch?v=442qnzeZZYM">
                         <img src="./images/anavitoria.webp" alt="Foto perfil da ana e vitória" />
@@ -341,9 +331,12 @@
         document.addEventListener('scroll', (e) => {
             const scroll = window.scrollY;
             const header = document.querySelector('.header-top-site');
-            if (scroll > 00) {
+            const title = document.querySelector('#title');
+            if (scroll > 0) {
                 header.classList.add('scroll');
+                title.style.color = '#FFFFFF'
             } else {
+                title.style.color = '#9c44d7'
                 header.classList.remove('scroll');
             }
         });

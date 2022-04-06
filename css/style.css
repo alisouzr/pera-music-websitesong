@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/*
+Tudo que for smartphone sem mediaqueries.
+
+#E08DAC
+#6A7FDB
+#57E2E5
+#45CB85
+#153131
+*/
+/* diretiva CSS é um meta dado que altera um comportamento do código. */
+h2 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-Black.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("../fonts/epilogue/Epilogue-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("../fonts/epilogue/Epilogue-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
+/* seletor universal */
+* {
+  box-sizing: border-box;
+}
+
+/* box-sizing - content-box */
+/*
+    seletor impuro. Seletor de Tag genérica. 
+    CSS reset.
+    */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+  min-height: 400px;
+  background-color: #f4d6f5;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body ul li {
+  list-style: none;
+}
+
+main header.header-top-site {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 23px;
+  color: #fff;
+  position: fixed;
+  z-index: 10;
+  transition-duration: 0.5s;
+  background: linear-gradient(rgba(188, 107, 242, 0), rgba(188, 107, 242, 0));
+}
+
+main header.header-top-site.scroll {
+  top: -80px;
+  transform: translateY(80px);
+  transition-duration: 0.5s;
+  background: #9c44d7;
+}
+
+/* especificidade CSS */
+main header > div#container {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main header > div#container > div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+main header > div#container > div > p {
+  margin: 0 0 0 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
+  letter-spacing: 0.2em;
+  color: #9c44d7;
+}
+
+main header button {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.1882352941);
+  border-radius: 6px;
+  background-color: unset;
+}
+
+main #hero {
+  width: 100%;
+  padding-top: 80px;
+  top: 0;
+}
+
+/* section div.banner > picture {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    section div.banner > picture > img {
+      cursor: pointer;
+      width: 15em;
+      height: 15em; 
+      padding: 0.2em;
+      border-radius: 10%;
+  }
+
+    #carousel {
+      display: flex;
+      overflow-x: auto;
+
+      margin: 0 auto 0 auto;
+      width: 80vw;
+      height: fit-content;
+    } */
+/* section div.banner>picture a {
+    margin: .2em;
+    border: solid 0.1em;
+    border-radius: 0.4em;
+  }
+   */
+section div.banner > picture img {
+  cursor: pointer;
+  width: 200px;
+  height: 100%;
+  border-radius: 8%;
+  padding: 0.4em;
+}
+
+section div.banner > picture img:hover {
+  transform: scale(1.04);
+}
+
+#carousel {
+  display: flex;
+  overflow-x: auto;
+  margin: 0 auto 0 auto;
+  width: 80vw;
+  height: fit-content;
+  align-items: center;
+}
+
+header > div#container > div > img {
+  height: 48px;
+  width: 48px;
+}
+
+main .show-mobile {
+  display: block;
+}
+
+main .show-desktop {
+  display: none;
+}
+
+main #hero p,
+main #hero h1 {
+  color: #fff;
+}
+
+main #hero h2 {
+  color: #4F22F2;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  padding-left: 6%;
+  margin-bottom: 10px;
+}
+
+main #hero h1 {
+  font-size: 3.5em;
+  font-family: "Epilogue-Bold";
+  font-weight: 900;
+  margin: 0;
+}
+
+main #hero p {
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+
+main #hero {
+  padding: 90px 5% 5% 5%;
+}
+
+main #hero .button-group {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+/* pseudo seletor. : significa um seletor condicional */
+main #hero .button-group button {
+  background-color: #4F22F2;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+}
+
+main #hero .modern-studio .modern-studio-star {
+  position: absolute;
+}
+
+/* breakpoints - ponto de mudança com cada device */
+/* desta linha para cima é resolução menor que 576px */
+/* medida css e medida do dispositivo */
+/* Landscape mode */
+ul {
+  padding: 0;
+}
+
+section#mix-card {
+  margin-top: -5%;
+  padding: 5%;
+}
+
+section#mix-card a > h2 {
+  color: #206240;
+  padding: 10px 0;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+section#mix-card ul li img {
+  width: 200px;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+
+section#mix-card ul li > div {
+  padding: 10px;
+  border: solid #BC6BF2 1px;
+  border-radius: 0.4em;
+}
+
+#carousel-2 {
+  display: flex;
+  overflow-x: auto;
+  margin-left: 6%;
+  align-items: center;
+  margin-right: 6%;
+}
+
+section#mix-card > h2 {
+  color: #9c44d7;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 4px 2% 4px 6%;
+  letter-spacing: 2px;
+}
+
+section#mix-card li {
+  margin-bottom: 1em;
+}
+
+section#mix-card li + li {
+  margin-left: 10px;
+}
+
+section#new {
+  margin-top: -5%;
+  padding: 5%;
+}
+
+section#new div#incorporation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+section#new > h2 {
+  margin-left: 6%;
+  color: #206240;
+}
+
+section#new > h3 {
+  margin-left: 6%;
+  color: #525252;
+}
+
+section#new p {
+  margin-left: 6%;
+  color: #206240;
+}
+
+section#today > h2 {
+  margin-left: 6%;
+  color: #9c44d7;
+}
+
+section#today {
+  margin-top: -5%;
+  padding: 5%;
+  padding-bottom: 2%;
+}
+
+section#today p {
+  margin-left: 6%;
+  color: #201919;
+}
+
+section#rotine {
+  margin-top: -5%;
+  padding: 5%;
+}
+
+section#rotine > h2 {
+  margin-left: 6%;
+  color: #206240;
+}
+
+section#rotine p {
+  margin-left: 6%;
+  color: #525252;
+}
+
+section#today div#text {
+  margin-left: 4%;
+  width: 100%;
+}
+
+section#today div div h4 {
+  margin: initial;
+  font-weight: bold;
+  font-size: 0.54em;
+}
+
+section#today div div > h3 {
+  margin: initial;
+  font-size: 0.8em;
+  margin-top: 1%;
+}
+
+section#today #img {
+  opacity: 80%;
+  width: 6em;
+  height: 6em;
+}
+
+section#today div#list-song {
+  margin: 2% 6%;
+  display: flex;
+  background-color: #c46bff;
+  align-items: center;
+}
+
+section#today div#list-song > div#img {
+  display: flex;
+}
+
+section#today img#play {
+  width: 30px;
+}
+
+section#today div#list-song div:nth-child(3) {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer div {
+  text-align: center;
+  color: #525252;
+}
