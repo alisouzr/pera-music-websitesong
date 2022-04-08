@@ -29,7 +29,7 @@
 
         >div {
             display: grid;
-            grid-template-columns: 236px 236px;
+            grid-template-columns: 280px;
         }
     }
 
@@ -76,7 +76,7 @@
 
         >div {
             display: grid;
-            grid-template-columns: repeat(2, 236px);
+            grid-template-columns: repeat(2, 308px);
         }
     }
 
@@ -149,7 +149,7 @@
 
         >div {
             display: grid;
-            grid-template-columns: 236px 236px 236px 236px;
+            grid-template-columns: repeat(3, 272px);
         }
     }
 
@@ -345,6 +345,11 @@
         grid-template-columns: 236px;
         margin-left: 10%;
         margin-bottom: 1.5em;
+
+        >div {
+            display: grid;
+            grid-template-columns: repeat(3, 272px);
+        }
     }
 
     .music-type4 {
@@ -432,7 +437,7 @@
     section#new div#grid-eletro {
         margin-left: 6%;
         display: grid;
-        grid-template-columns: repeat(4, 242px);
+        grid-template-columns: repeat(4, 270px);
     }
 
     section#new div#grid-eletro img {
@@ -466,7 +471,7 @@
 
         >div {
             display: grid;
-            grid-template-columns: repeat(5, 236px);
+            grid-template-columns: repeat(4, 270px);
         }
     }
 }
@@ -637,7 +642,7 @@
 
         >div {
             display: grid;
-            grid-template-columns: repeat(6, 236px);
+            grid-template-columns: repeat(5, 236px);
         }
     }
 }

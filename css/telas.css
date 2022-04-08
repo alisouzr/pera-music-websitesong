@@ -24,7 +24,7 @@
   }
   section#humor > div {
     display: grid;
-    grid-template-columns: 236px 236px;
+    grid-template-columns: 280px;
   }
 
   .music-type3 {
@@ -62,7 +62,7 @@
   }
   section#humor > div {
     display: grid;
-    grid-template-columns: repeat(2, 236px);
+    grid-template-columns: repeat(2, 308px);
   }
 
   .music-type5 {
@@ -128,7 +128,7 @@
   }
   section#humor > div {
     display: grid;
-    grid-template-columns: 236px 236px 236px 236px;
+    grid-template-columns: repeat(3, 272px);
   }
 
   .music-type4 {
@@ -321,6 +321,10 @@
     margin-left: 10%;
     margin-bottom: 1.5em;
   }
+  section#humor > div {
+    display: grid;
+    grid-template-columns: repeat(3, 272px);
+  }
 
   .music-type4 {
     height: 232px;
@@ -404,7 +408,7 @@
   section#new div#grid-eletro {
     margin-left: 6%;
     display: grid;
-    grid-template-columns: repeat(4, 242px);
+    grid-template-columns: repeat(4, 270px);
   }
 
   section#new div#grid-eletro img {
@@ -436,7 +440,7 @@
 
   section#humor > div {
     display: grid;
-    grid-template-columns: repeat(5, 236px);
+    grid-template-columns: repeat(4, 270px);
   }
 }
 /* Notebooks e telas full HD ou superior */
@@ -599,7 +603,7 @@
 
   section#humor > div {
     display: grid;
-    grid-template-columns: repeat(6, 236px);
+    grid-template-columns: repeat(5, 236px);
   }
 }
 /* Extralarge - Ex: Ultrawide, iMacPro ou telas acima de 23" */

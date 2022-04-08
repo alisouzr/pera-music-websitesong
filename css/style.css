@@ -414,7 +414,9 @@ section#today div#list-song div:nth-child(3) {
   height: 50px;
   position: relative;
 }
-
+.icon-wrapper:hover .bell-icon {
+  animation: shake 1s forwards;
+}
 .icon-wrapper::after {
   content: attr(data-number);
   width: 20px;
@@ -430,16 +432,11 @@ section#today div#list-song div:nth-child(3) {
   opacity: 0;
   transform: translateY(3px);
 }
-
 .icon-wrapper:hover::after {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.25s;
   transform: 0.25s;
-}
-
-.icon-wrapper:hover .bell-icon {
-  animation: shake 1s forwards;
 }
 
 section#new div#grid-eletro {
@@ -497,15 +494,7 @@ section#humor button {
 }
 
 .music-type3 {
-  height: 232px;
-  width: 232px;
-  background-image: url("../images/sad.png");
-  background-repeat: no-repeat;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .music-type4 {
