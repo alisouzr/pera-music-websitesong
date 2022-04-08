@@ -216,11 +216,14 @@ main #hero .button-group {
 
 /* pseudo seletor. : significa um seletor condicional */
 main #hero .button-group button {
-  background-color: #4F22F2;
+  background-color: #9c44d7;
   font-size: 0.75em;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 800;
+  padding: 1em 2em;
+  color: #fff;
+  border-radius: 8px;
 }
 
 main #hero .modern-studio .modern-studio-star {
@@ -290,7 +293,7 @@ section#new {
   padding: 5%;
 }
 
-section#new div#incorporation {
+#incorporation {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -386,6 +389,135 @@ section#today div#list-song div:nth-child(3) {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+.bell-icon {
+  max-width: 100%;
+}
+
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.icon-wrapper::after {
+  content: attr(data-number);
+  width: 20px;
+  height: 20px;
+  background-color: #d32b2b;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+.icon-wrapper:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.25s;
+  transform: 0.25s;
+}
+
+.icon-wrapper:hover .bell-icon {
+  animation: shake 1s forwards;
+}
+
+section#new div#grid-eletro {
+  margin-left: 6%;
+  display: grid;
+  grid-template-columns: repeat(2, 145px);
+}
+section#new div#grid-eletro img {
+  height: 125px;
+  border-radius: 6px;
+}
+
+section#humor {
+  display: grid;
+  grid-template-columns: 236px;
+  margin-left: 2.5em;
+  margin-bottom: 1.5em;
+}
+section#humor img {
+  background-color: #fff;
+  border-radius: 100%;
+}
+section#humor h2 {
+  color: #9c44d7;
+  margin: 0 4px 0.6em 4px;
+}
+section#humor button {
+  padding: 2em;
+  opacity: 0.72;
+  border-radius: 50%;
+}
+
+.music-type {
+  height: 232px;
+  width: 232px;
+  background-image: url("../images/coqueiro.png");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-type2 {
+  height: 232px;
+  width: 232px;
+  background-image: url("../images/treino.png");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-type3 {
+  height: 232px;
+  width: 232px;
+  background-image: url("../images/sad.png");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-type4 {
+  display: none;
+}
+
+.music-type5 {
+  display: none;
+}
+
+.music-type6 {
+  display: none;
 }
 
 footer div {

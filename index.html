@@ -17,7 +17,7 @@
             <div id="container">
                 <div>
                     <img src="PERA.svg" alt="Logo Pera Music">
-                    <p id="title">Pera Music</p>
+                    <p class="title">Pera Music</p>
                 </div>
                 <button title="menu" type="button" class="show-mobile">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFF">
@@ -36,8 +36,11 @@
 
 
 
-                <button class="show-desktop"><img src="./images/alex.webp" alt="">
-                    Aliny Souza</button>
+                <button class="show-desktop">
+                    <img src="./images/alex.webp" alt="">
+                    Aliny Souza
+                    <div class="icon-wrapper" data-number="6"><img src="./bell.svg" alt="" class="bell-icon"></div>
+                </button>
 
             </div>
         </header>
@@ -68,6 +71,69 @@
                 <div>
                     <div class="button-group">
                         <button>More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="humor">
+            <h2>Play what you feel</h2>
+            <div>
+                <div class="music-type">
+                    <div>
+                        <button aria-label="Tocar" type="button" class="sc-cxabCf cphfvD"><svg focusable="false"
+                                height="1em" role="img" width="1em" viewBox="0 0 12 12" aria-hidden="true">
+                                <path fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" d="M2.5.5v11l9-5.5z"></path>
+                            </svg></button>
+                    </div>
+                </div>
+
+                <div class="music-type2">
+                    <div>
+                        <button aria-label="Tocar" type="button" class="sc-cxabCf cphfvD"><svg focusable="false"
+                                height="1em" role="img" width="1em" viewBox="0 0 12 12" aria-hidden="true">
+                                <path fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" d="M2.5.5v11l9-5.5z"></path>
+                            </svg></button>
+                    </div>
+                </div>
+
+                <div class="music-type3">
+                    <div>
+                        <button aria-label="Tocar" type="button" class="sc-cxabCf cphfvD"><svg focusable="false"
+                                height="1em" role="img" width="1em" viewBox="0 0 12 12" aria-hidden="true">
+                                <path fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" d="M2.5.5v11l9-5.5z"></path>
+                            </svg></button>
+                    </div>
+                </div>
+
+                <div class="music-type4">
+                    <div>
+                        <button aria-label="Tocar" type="button" class="sc-cxabCf cphfvD"><svg focusable="false"
+                                height="1em" role="img" width="1em" viewBox="0 0 12 12" aria-hidden="true">
+                                <path fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" d="M2.5.5v11l9-5.5z"></path>
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="music-type5">
+                    <div>
+                        <button aria-label="Tocar" type="button" class="sc-cxabCf cphfvD"><svg focusable="false"
+                                height="1em" role="img" width="1em" viewBox="0 0 12 12" aria-hidden="true">
+                                <path fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" d="M2.5.5v11l9-5.5z"></path>
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="music-type6">
+                    <div>
+                        <button aria-label="Tocar" type="button" class="sc-cxabCf cphfvD"><svg focusable="false"
+                                height="1em" role="img" width="1em" viewBox="0 0 12 12" aria-hidden="true">
+                                <path fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" d="M2.5.5v11l9-5.5z"></path>
+                            </svg></button>
                     </div>
                 </div>
             </div>
@@ -184,6 +250,30 @@
         <section id="new">
             <h2>Want to try something new?</h2>
             <h3>So let's go!</h3>
+            <h3>Some electronic songs</h3>
+
+            <div>
+                <div id="grid-eletro">
+                    <a href="">
+                        <img src="./images/el.jpg" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src=" ./images/elet.jpg" alt="">
+                    </a>
+
+                    <a href="">
+                        <img class=" top" src="./images/eletro.jpg" alt="">
+                    </a>
+
+                    <a href="">
+                        <img class=" top" src=" ./images/eletronica.jpg" alt="">
+                    </a>
+
+
+
+                </div>
+            </div>
 
             <p>We have a special playlist just for you</p>
 
@@ -312,13 +402,8 @@
             </div>
         </section>
 
-        <footer>
-            <!-- <div id="animation">
-                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_vixkj2dq.json"
-                    background="transparent" speed="1" style="width: 100%; height: 30%;" loop autoplay>
-                </lottie-player>
-            </div> -->
 
+        <footer>
             <div>
                 <p>Todos os direitos reservados &copy;2022</p>
                 <p>Pera Music by Aliny Souza</p>
@@ -331,12 +416,11 @@
         document.addEventListener('scroll', (e) => {
             const scroll = window.scrollY;
             const header = document.querySelector('.header-top-site');
-            const title = document.querySelector('#title');
             if (scroll > 0) {
                 header.classList.add('scroll');
-                title.style.color = '#FFFFFF'
+                title = document.querySelector('.title').style.color = '#FFFFFF'
             } else {
-                title.style.color = '#9c44d7'
+                document.querySelector('.title').style.color = '#9c44d7'
                 header.classList.remove('scroll');
             }
         });

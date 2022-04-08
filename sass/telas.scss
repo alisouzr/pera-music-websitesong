@@ -1,7 +1,109 @@
-@media (min-width: 576px) {}
+@media (min-width: 500px) {
+    section#new {
+        div#grid-eletro {
+            margin-left: 6%;
+            display: grid;
+            grid-template-columns: repeat(2, 210px);
+
+            img {
+                height: 180px;
+            }
+        }
+    }
+
+    section#humor {
+        display: grid;
+        grid-template-columns: 236px;
+        margin-left: 10%;
+        margin-bottom: 1.5em;
+
+        img {
+            background-color: #fff;
+            border-radius: 100%;
+        }
+
+        h2 {
+            color: #9c44d7;
+            margin: 0 4px .6em 4px;
+        }
+
+        >div {
+            display: grid;
+            grid-template-columns: 236px 236px;
+        }
+    }
+
+    .music-type3 {
+        display: none;
+    }
+
+    .music-type4 {
+        display: none;
+    }
+
+
+}
 
 /* Tablets e desktop antigos - chromebook */
 @media (min-width: 768px) {
+    section#new {
+        div#grid-eletro {
+            margin-left: 6%;
+            display: grid;
+            grid-template-columns: repeat(2, 324px);
+
+            img {
+                height: 250px;
+            }
+        }
+    }
+
+    section#humor {
+        display: grid;
+        grid-template-columns: 236px;
+        margin-left: 10%;
+        margin-bottom: 1.5em;
+
+        img {
+            background-color: #fff;
+            border-radius: 100%;
+        }
+
+        h2 {
+            color: #9c44d7;
+            margin: 0 4px .6em 4px;
+        }
+
+        >div {
+            display: grid;
+            grid-template-columns: repeat(2, 236px);
+        }
+    }
+
+    .music-type5 {
+        height: 232px;
+        width: 232px;
+        background-image: url("../images/focus.png");
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .music-type6 {
+        height: 232px;
+        width: 232px;
+        background-image: url("../images/love.png");
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     section div.banner>picture>img {
         cursor: pointer;
         width: 15em;
@@ -9,10 +111,68 @@
         padding: 0.2em;
         border-radius: 10%;
     }
+
+    main #hero .button-group button {
+        padding: 1.4em 4.4em;
+    }
 }
 
 /* Maioria dos Desktops */
 @media (min-width: 960px) {
+    section#new {
+        div#grid-eletro {
+            margin-left: 6%;
+            display: grid;
+            grid-template-columns: repeat(2, 406px);
+
+            img {
+                height: 310px;
+            }
+        }
+    }
+
+    section#humor {
+        display: grid;
+        grid-template-columns: 236px;
+        margin-left: 10%;
+        margin-bottom: 1.5em;
+
+        img {
+            background-color: #fff;
+            border-radius: 100%;
+        }
+
+        h2 {
+            color: #9c44d7;
+            margin: 0 4px .6em 4px;
+        }
+
+        >div {
+            display: grid;
+            grid-template-columns: 236px 236px 236px 236px;
+        }
+    }
+
+    .music-type4 {
+        height: 232px;
+        width: 232px;
+        background-image: url("../images/focus.png");
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .music-type5 {
+        display: none;
+    }
+
+    .music-type6 {
+        display: none;
+    }
+
     #carousel {
         display: grid;
         grid-template-columns: repeat(4, 210px);
@@ -67,7 +227,6 @@
         background-color: unset;
         width: 140px;
         height: 48px;
-        color: #fff;
         font-weight: 900;
         text-transform: uppercase;
         border: 1px solid #ffffff30;
@@ -181,6 +340,34 @@
 }
 
 @media (min-width: 1024px) {
+    section#humor {
+        display: grid;
+        grid-template-columns: 236px;
+        margin-left: 10%;
+        margin-bottom: 1.5em;
+    }
+
+    .music-type4 {
+        height: 232px;
+        width: 232px;
+        background-image: url("../images/focus.png");
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .music-type5 {
+        display: none;
+    }
+
+    .music-type6 {
+        display: none;
+    }
+
+
     #carousel {
         display: grid;
         grid-template-columns: repeat(4, 230px);
@@ -205,6 +392,29 @@
 }
 
 @media(min-width: 1120px) {
+    section#humor {
+        display: grid;
+        grid-template-columns: 236px;
+        margin-left: 10%;
+        margin-bottom: 1.5em;
+    }
+
+    .music-type5 {
+        height: 232px;
+        width: 232px;
+        background-image: url("../images/party.png");
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .music-type6 {
+        display: none;
+    }
+
     #carousel {
         display: grid;
         grid-template-columns: repeat(4, 250px);
@@ -218,8 +428,74 @@
     }
 }
 
+@media(min-width: 1180px) {
+    section#new div#grid-eletro {
+        margin-left: 6%;
+        display: grid;
+        grid-template-columns: repeat(4, 242px);
+    }
+
+    section#new div#grid-eletro img {
+        height: 226px;
+    }
+
+    section#humor {
+        display: grid;
+        grid-template-columns: 236px;
+        margin-left: 10%;
+        margin-bottom: 1.5em;
+    }
+
+    .music-type5 {
+        height: 232px;
+        width: 232px;
+        background-image: url("../images/love.png");
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .music-type6 {
+        display: none;
+    }
+
+    section#humor {
+
+        >div {
+            display: grid;
+            grid-template-columns: repeat(5, 236px);
+        }
+    }
+}
+
 /* Notebooks e telas full HD ou superior */
 @media (min-width: 1200px) {
+    section#humor {
+        display: grid;
+        grid-template-columns: 236px;
+        margin-left: 10%;
+        margin-bottom: 1.5em;
+    }
+
+    .music-type5 {
+        height: 232px;
+        width: 232px;
+        background-image: url("../images/party.png");
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .music-type6 {
+        display: none;
+    }
+
     main #hero .modern-studio {
         width: 45%;
     }
@@ -248,6 +524,39 @@
 }
 
 @media (min-width: 1300px) {
+    section#new div#grid-eletro {
+        margin-left: 6%;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+    }
+
+    section#new div#grid-eletro img {
+        height: 250px;
+    }
+
+    section#humor {
+        display: grid;
+        grid-template-columns: 236px;
+        margin-left: 10%;
+        margin-bottom: 1.5em;
+    }
+
+    .music-type5 {
+        height: 232px;
+        width: 232px;
+        background-image: url("../images/party.png");
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .music-type6 {
+        display: none;
+    }
+
     #carousel {
         display: grid;
         grid-template-columns: repeat(4, 290px);
@@ -262,6 +571,25 @@
 }
 
 @media (min-width: 1440px) {
+    section#humor {
+        display: grid;
+        grid-template-columns: 236px;
+        margin-left: 10%;
+        margin-bottom: 1.5em;
+    }
+
+    .music-type6 {
+        height: 232px;
+        width: 232px;
+        background-image: url("../images/love.png");
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     section div.banner picture {
         display: flex;
         flex-wrap: wrap;
@@ -294,5 +622,195 @@
     }
 }
 
+@media(min-width: 1430px) {
+    section#new div#grid-eletro img {
+        height: 286px;
+    }
+
+    section#new div#grid-eletro {
+        margin-left: 6%;
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+    }
+
+    section#humor {
+
+        >div {
+            display: grid;
+            grid-template-columns: repeat(6, 236px);
+        }
+    }
+}
+
 /* Extralarge - Ex: Ultrawide, iMacPro ou telas acima de 23" */
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+    section#new div#grid-eletro {
+        margin-left: 6%;
+        display: grid;
+        grid-template-columns: repeat(4, 340px);
+    }
+
+    #carousel {
+        display: grid;
+        grid-template-columns: repeat(4, 360px);
+    }
+
+    section div.banner>picture img {
+        cursor: pointer;
+        width: 360px;
+        height: initial;
+        padding: 0.5em;
+    }
+
+    main #hero .button-group button {
+        background-color: #9c44d7;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 800;
+        padding: 1.4em 4em;
+        color: #fff;
+    }
+
+    section#mix-card ul li img {
+        width: 210px;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.6;
+    }
+
+}
+
+@media (min-width: 1800px) {
+    section#new div#grid-eletro {
+        margin-left: 6%;
+        display: grid;
+        grid-template-columns: repeat(4, 406px);
+    }
+
+    #carousel {
+        display: grid;
+        grid-template-columns: repeat(4, 420px);
+    }
+
+    section div.banner>picture img {
+        cursor: pointer;
+        width: 420px;
+        height: initial;
+        padding: 0.5em;
+    }
+
+    main #hero .button-group button {
+        background-color: #9c44d7;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 800;
+        padding: 1.4em 4em;
+        color: #fff;
+    }
+
+    section#mix-card ul li img {
+        width: 244px;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.6;
+    }
+
+}
+
+@media (min-width: 2100px) {
+    #carousel {
+        display: grid;
+        grid-template-columns: repeat(4, 480px);
+    }
+
+    section div.banner>picture img {
+        cursor: pointer;
+        width: 466px;
+        height: initial;
+        padding: 0.5em;
+    }
+
+    main #hero .button-group button {
+        background-color: #9c44d7;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 800;
+        padding: 1.4em 4em;
+        color: #fff;
+    }
+
+    section#mix-card ul li img {
+        width: 290px;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.6;
+    }
+
+}
+
+@media (min-width: 2400px) {
+    #carousel {
+        display: grid;
+        grid-template-columns: repeat(4, 540px);
+    }
+
+    section div.banner>picture img {
+        cursor: pointer;
+        width: 530px;
+        height: initial;
+        padding: 0.5em;
+    }
+
+    main #hero .button-group button {
+        background-color: #9c44d7;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 800;
+        padding: 1.4em 4em;
+        color: #fff;
+    }
+
+    section#mix-card ul li img {
+        width: 336px;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.6;
+    }
+
+}
+
+@media (min-width: 2600px) {
+    #carousel {
+        display: grid;
+        grid-template-columns: repeat(4, 600px);
+    }
+
+    section div.banner>picture img {
+        cursor: pointer;
+        width: 590px;
+        height: initial;
+        padding: 0.5em;
+    }
+
+    main #hero .button-group button {
+        background-color: #9c44d7;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 800;
+        padding: 1.4em 4em;
+        color: #fff;
+    }
+
+    section#mix-card ul li img {
+        width: 360px;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.6;
+    }
+
+}
