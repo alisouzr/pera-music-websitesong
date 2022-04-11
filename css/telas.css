@@ -235,9 +235,6 @@
   main #hero .button-group button {
     cursor: pointer;
   }
-  main #hero .button-group button:hover {
-    background-color: #d69ffa;
-  }
 
   /* section div.banner > picture {
       display:flex;
