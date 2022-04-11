@@ -1,4 +1,4 @@
-/* @keyframes loadingAnimation {
+@keyframes loadingAnimation {
     0% {
         transform: scale(1);
     }
@@ -8,7 +8,7 @@
     }
 }
 
- body {
+body {
     overflow: auto;
 
     .loadPage {
@@ -107,4 +107,4 @@ body {
             }
         }
     }
-} */
+}
