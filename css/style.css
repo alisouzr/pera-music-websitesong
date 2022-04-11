@@ -1,113 +1,51 @@
-/* @keyframes loadingAnimation {
-    0% {
-        transform: scale(1);
-    }
-
-    75% {
-        transform: scale(1.2);
-    }
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+.bell-icon {
+  max-width: 100%;
 }
 
- body {
-    overflow: auto;
-
-    .loadPage {
-        display: none;
-    }
-
-    &.loading {
-        overflow: hidden;
-
-        div.loadPage {
-            width: 100%;
-            height: 100vh;
-            background-color: #000;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            svg {
-                height: 200px;
-                animation-name: loadingAnimation;
-                animation-duration: 3s;
-                animation-iteration-count: infinite;
-            }
-        }
-    }
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.icon-wrapper:hover .bell-icon {
+  animation: shake 1s forwards;
+}
+.icon-wrapper::after {
+  content: attr(data-number);
+  width: 20px;
+  height: 20px;
+  background-color: #d32b2b;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  opacity: 0;
+  transform: translateY(3px);
+}
+.icon-wrapper:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.25s;
+  transform: 0.25s;
 }
 
-body {
-    overflow: hidden;
-
-    &.loading {
-        overflow: hidden;
-
-        div.loadPage {
-            width: 100%;
-            height: 100vh;
-            background-color: #9c44d7;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            opacity: 1;
-            transition: all ease-in-out 0.5s;
-
-            h2 {
-                font-size: 20px;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                color: aliceblue;
-            }
-
-            svg {
-                width: 100%;
-                height: 232px;
-                animation-name: loadingAnimation;
-                animation-duration: 3s;
-                animation-iteration-count: infinite;
-            }
-
-            h1 {
-                color: rgb(58, 0, 105);
-                padding-top: 20px;
-            }
-        }
-
-        &.loading-finalized {
-            overflow: auto;
-
-            .loadPage {
-                opacity: 0;
-            }
-        }
-    }
-}
-
-@media(min-width: 1024px) {
-    body {
-        &.loading {
-            div.loadPage {
-                h2 {
-                    font-size: 32px;
-                }
-
-                h1 {
-                    font-size: 40px;
-                }
-            }
-        }
-    }
-} */
 main header button {
   width: 48px;
   height: 48px;
@@ -469,6 +407,21 @@ section#today div#list-song div:nth-child(3) {
   justify-content: flex-end;
 }
 
+section#rotine {
+  margin-top: -5%;
+  padding: 5%;
+}
+
+section#rotine > h2 {
+  margin-left: 6%;
+  color: #206240;
+}
+
+section#rotine p {
+  margin-left: 6%;
+  color: #525252;
+}
+
 h2 {
   margin: 0;
 }
@@ -508,69 +461,6 @@ main .show-desktop {
 
 ul {
   padding: 0;
-}
-
-section#rotine {
-  margin-top: -5%;
-  padding: 5%;
-}
-
-section#rotine > h2 {
-  margin-left: 6%;
-  color: #206240;
-}
-
-section#rotine p {
-  margin-left: 6%;
-  color: #525252;
-}
-
-@keyframes shake {
-  10% {
-    transform: rotate(15deg);
-  }
-  20% {
-    transform: rotate(-15deg);
-  }
-  30% {
-    transform: rotate(15deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-}
-.bell-icon {
-  max-width: 100%;
-}
-
-.icon-wrapper {
-  width: 50px;
-  height: 50px;
-  position: relative;
-}
-.icon-wrapper:hover .bell-icon {
-  animation: shake 1s forwards;
-}
-.icon-wrapper::after {
-  content: attr(data-number);
-  width: 20px;
-  height: 20px;
-  background-color: #d32b2b;
-  color: #fff;
-  display: grid;
-  place-content: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 5px;
-  right: 0;
-  opacity: 0;
-  transform: translateY(3px);
-}
-.icon-wrapper:hover::after {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.25s;
-  transform: 0.25s;
 }
 
 footer div {
