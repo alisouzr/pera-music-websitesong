@@ -56,6 +56,18 @@ main #hero .button-group button {
   border-radius: 8px;
 }
 
+/* main {
+    section#hero {
+        &.button-group {
+            button {
+                &:hover {
+                    background-color: #c68feb;
+                }
+            }
+        }
+    }
+}
+ */
 main #hero .modern-studio .modern-studio-star {
   position: absolute;
 }

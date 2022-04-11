@@ -35,7 +35,6 @@
     display: none;
   }
 }
-/* Tablets e desktop antigos - chromebook */
 @media (min-width: 768px) {
   section#new div#grid-eletro {
     margin-left: 6%;
@@ -104,7 +103,6 @@
     padding: 1.4em 4.4em;
   }
 }
-/* Maioria dos Desktops */
 @media (min-width: 960px) {
   section#new div#grid-eletro {
     margin-left: 6%;
@@ -235,17 +233,10 @@
   main #hero .button-group button {
     cursor: pointer;
   }
+  main #hero .button-group button:hover {
+    background-color: #BC6BF2;
+  }
 
-  /* section div.banner > picture {
-      display:flex;
-      flex-wrap: wrap;
-    }
-    section div.banner > picture > img {
-      cursor: pointer;
-      width: 25%;
-      height: 25%;
-      padding: .5em;
-    } */
   section div.banner picture {
     display: flex;
     flex-wrap: wrap;
@@ -453,7 +444,6 @@
     grid-template-columns: repeat(4, 270px);
   }
 }
-/* Notebooks e telas full HD ou superior */
 @media (min-width: 1200px) {
   section#humor {
     display: grid;
@@ -619,7 +609,6 @@
     grid-template-columns: repeat(5, 236px);
   }
 }
-/* Extralarge - Ex: Ultrawide, iMacPro ou telas acima de 23" */
 @media (min-width: 1600px) {
   section#new div#grid-eletro {
     margin-left: 6%;

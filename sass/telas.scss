@@ -44,7 +44,6 @@
 
 }
 
-/* Tablets e desktop antigos - chromebook */
 @media (min-width: 768px) {
     section#new {
         div#grid-eletro {
@@ -123,7 +122,6 @@
     }
 }
 
-/* Maioria dos Desktops */
 @media (min-width: 960px) {
     section#new {
         div#grid-eletro {
@@ -265,19 +263,11 @@
     main #hero .button-group button {
         cursor: pointer;
 
+        &:hover {
+            background-color: #BC6BF2;
+        }
 
     }
-
-    /* section div.banner > picture {
-        display:flex;
-        flex-wrap: wrap;
-      }
-      section div.banner > picture > img {
-        cursor: pointer;
-        width: 25%;
-        height: 25%;
-        padding: .5em;
-      } */
 
     section div.banner picture {
         display: flex;
@@ -499,7 +489,6 @@
     }
 }
 
-/* Notebooks e telas full HD ou superior */
 @media (min-width: 1200px) {
     section#humor {
         display: grid;
@@ -676,7 +665,6 @@
     }
 }
 
-/* Extralarge - Ex: Ultrawide, iMacPro ou telas acima de 23" */
 @media (min-width: 1600px) {
     section#new div#grid-eletro {
         margin-left: 6%;
