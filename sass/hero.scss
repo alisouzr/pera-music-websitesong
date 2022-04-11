@@ -1,0 +1,95 @@
+main {
+    section {
+        &#hero {
+            width: 100%;
+            padding-top: 80px;
+            top: 0;
+
+            div {
+                &.banner {
+                    >picture {
+
+                        img {
+                            &:hover {
+                                transform: scale(1.04);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main #hero p,
+main #hero h1 {
+    color: #fff;
+}
+
+main #hero h2 {
+    color: #4F22F2;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    padding-left: 6%;
+    margin-bottom: 10px;
+}
+
+main #hero h1 {
+    font-size: 3.5em;
+    font-family: "Epilogue-Bold";
+    font-weight: 900;
+    margin: 0;
+}
+
+main #hero p {
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+main #hero {
+    padding: 90px 5% 5% 5%;
+}
+
+main #hero .button-group {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+/* pseudo seletor. : significa um seletor condicional */
+main #hero .button-group button {
+    background-color: #9c44d7;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    padding: 1em 2em;
+    color: #fff;
+    border-radius: 8px;
+}
+
+main #hero .modern-studio .modern-studio-star {
+    position: absolute;
+}
+
+section div.banner>picture img {
+    cursor: pointer;
+    width: 200px;
+    height: 100%;
+    border-radius: 8%;
+    padding: .4em;
+}
+
+
+#carousel {
+    display: flex;
+    overflow-x: auto;
+
+    margin: 0 auto 0 auto;
+    width: 80vw;
+    height: fit-content;
+    align-items: center;
+}

@@ -1,0 +1,45 @@
+section#new {
+  margin-top: -5%;
+  padding: 5%;
+}
+
+#incorporation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+section#new > h2 {
+  margin-left: 6%;
+  color: #206240;
+}
+
+section#new > h3 {
+  margin-left: 6%;
+  color: #525252;
+}
+
+section#new p {
+  margin-left: 6%;
+  color: #206240;
+}
+
+section#new div#grid-eletro {
+  margin-left: 6%;
+  display: grid;
+  grid-template-columns: repeat(2, 145px);
+}
+section#new div#grid-eletro a {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section#new div#grid-eletro img {
+  height: 125px;
+  border-radius: 6px;
+}
+section#new div#grid-eletro img:hover {
+  transform: scale(1.04);
+}

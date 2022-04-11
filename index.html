@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <main>
         <header class="header-top-site">
             <div id="container">
@@ -27,10 +28,10 @@
                 </button>
                 <nav class="show-desktop">
                     <ul>
-                        <li><a href="#about">Search</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#pricing">Random</a></li>
-                        <li><a href="#blog">About</a></li>
+                        <li><a class="title" href="#about">Search</a></li>
+                        <li><a class="title" href="#services">Services</a></li>
+                        <li><a class="title" href="#pricing">Random</a></li>
+                        <li><a class="title" href="#blog">About</a></li>
                     </ul>
                 </nav>
 
@@ -38,7 +39,7 @@
 
                 <button class="show-desktop">
                     <img src="./images/alex.webp" alt="">
-                    Aliny Souza
+                    alisouzr
                     <div class="icon-wrapper" data-number="6"><img src="./bell.svg" alt="" class="bell-icon"></div>
                 </button>
 
@@ -418,19 +419,18 @@
             const header = document.querySelector('.header-top-site');
             if (scroll > 0) {
                 header.classList.add('scroll');
-                title = document.querySelector('.title').style.color = '#FFFFFF'
+                document.querySelectorAll('.title').forEach(function (element) {
+                    element.style.color = '#FFFFFF';
+                })
             } else {
-                document.querySelector('.title').style.color = '#9c44d7'
                 header.classList.remove('scroll');
+                document.querySelectorAll('.title').forEach(function (element) {
+                    element.style.color = '#9c44d7';
+                })
+
             }
         });
     </script>
-
-    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
-
-    </script> -->
 
 </body>
 

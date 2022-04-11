@@ -1,0 +1,60 @@
+section#today > h2 {
+  margin-left: 6%;
+  color: #9c44d7;
+}
+
+section#today {
+  margin-top: -5%;
+  padding: 5%;
+  padding-bottom: 2%;
+}
+
+section#today p {
+  margin-left: 6%;
+  color: #201919;
+}
+
+section#today div#text {
+  margin-left: 4%;
+  width: 100%;
+}
+
+section#today div div h4 {
+  margin: initial;
+  font-weight: bold;
+  font-size: 0.54em;
+}
+
+section#today div div > h3 {
+  margin: initial;
+  font-size: 0.8em;
+  margin-top: 1%;
+}
+
+section#today #img {
+  opacity: 80%;
+  width: 6em;
+  height: 6em;
+}
+
+section#today div#list-song {
+  margin: 2% 6%;
+  display: flex;
+  background-color: #c46bff;
+  align-items: center;
+}
+
+section#today div#list-song > div#img {
+  display: flex;
+}
+
+section#today img#play {
+  width: 30px;
+}
+
+section#today div#list-song div:nth-child(3) {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

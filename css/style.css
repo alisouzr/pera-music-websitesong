@@ -1,63 +1,121 @@
-@charset "UTF-8";
-/*
-Tudo que for smartphone sem mediaqueries.
+/* @keyframes loadingAnimation {
+    0% {
+        transform: scale(1);
+    }
 
-#E08DAC
-#6A7FDB
-#57E2E5
-#45CB85
-#153131
-*/
-/* diretiva CSS é um meta dado que altera um comportamento do código. */
-h2 {
-  margin: 0;
+    75% {
+        transform: scale(1.2);
+    }
 }
 
-@font-face {
-  font-family: "Epilogue-Regular";
-  src: url("../fonts/epilogue/Epilogue-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Epilogue-Regular";
-  src: url("../fonts/epilogue/Epilogue-Black.ttf") format("truetype");
-  font-weight: 800;
-}
-@font-face {
-  font-family: "Epilogue-Bold";
-  src: url("../fonts/epilogue/Epilogue-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Epilogue-Bold";
-  src: url("../fonts/epilogue/Epilogue-ExtraBold.ttf") format("truetype");
-  font-weight: 900;
-}
-/* seletor universal */
-* {
-  box-sizing: border-box;
+ body {
+    overflow: auto;
+
+    .loadPage {
+        display: none;
+    }
+
+    &.loading {
+        overflow: hidden;
+
+        div.loadPage {
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                height: 200px;
+                animation-name: loadingAnimation;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
 }
 
-/* box-sizing - content-box */
-/*
-    seletor impuro. Seletor de Tag genérica. 
-    CSS reset.
-    */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "arial";
-  min-height: 400px;
-  background-color: #f4d6f5;
+    overflow: hidden;
+
+    &.loading {
+        overflow: hidden;
+
+        div.loadPage {
+            width: 100%;
+            height: 100vh;
+            background-color: #9c44d7;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            transition: all ease-in-out 0.5s;
+
+            h2 {
+                font-size: 20px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                color: aliceblue;
+            }
+
+            svg {
+                width: 100%;
+                height: 232px;
+                animation-name: loadingAnimation;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+
+            h1 {
+                color: rgb(58, 0, 105);
+                padding-top: 20px;
+            }
+        }
+
+        &.loading-finalized {
+            overflow: auto;
+
+            .loadPage {
+                opacity: 0;
+            }
+        }
+    }
 }
 
-body a {
-  text-decoration: none;
-}
+@media(min-width: 1024px) {
+    body {
+        &.loading {
+            div.loadPage {
+                h2 {
+                    font-size: 32px;
+                }
 
-body ul li {
-  list-style: none;
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+} */
+main header button {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.1882352941);
+  border-radius: 6px;
+  background-color: unset;
+  background-color: none;
 }
-
 main header.header-top-site {
   display: flex;
   width: 100%;
@@ -71,28 +129,23 @@ main header.header-top-site {
   transition-duration: 0.5s;
   background: linear-gradient(rgba(188, 107, 242, 0), rgba(188, 107, 242, 0));
 }
-
 main header.header-top-site.scroll {
   top: -80px;
   transform: translateY(80px);
   transition-duration: 0.5s;
   background: #9c44d7;
 }
-
-/* especificidade CSS */
 main header > div#container {
   z-index: 1;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-
 main header > div#container > div {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
 main header > div#container > div > p {
   margin: 0 0 0 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -102,79 +155,13 @@ main header > div#container > div > p {
   color: #9c44d7;
 }
 
-main header button {
-  width: 48px;
-  height: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.1882352941);
-  border-radius: 6px;
-  background-color: unset;
-}
-
-main #hero {
+main section#hero {
   width: 100%;
   padding-top: 80px;
   top: 0;
 }
-
-/* section div.banner > picture {
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-    }
-    section div.banner > picture > img {
-      cursor: pointer;
-      width: 15em;
-      height: 15em; 
-      padding: 0.2em;
-      border-radius: 10%;
-  }
-
-    #carousel {
-      display: flex;
-      overflow-x: auto;
-
-      margin: 0 auto 0 auto;
-      width: 80vw;
-      height: fit-content;
-    } */
-/* section div.banner>picture a {
-    margin: .2em;
-    border: solid 0.1em;
-    border-radius: 0.4em;
-  }
-   */
-section div.banner > picture img {
-  cursor: pointer;
-  width: 200px;
-  height: 100%;
-  border-radius: 8%;
-  padding: 0.4em;
-}
-
-section div.banner > picture img:hover {
+main section#hero div.banner > picture img:hover {
   transform: scale(1.04);
-}
-
-#carousel {
-  display: flex;
-  overflow-x: auto;
-  margin: 0 auto 0 auto;
-  width: 80vw;
-  height: fit-content;
-  align-items: center;
-}
-
-header > div#container > div > img {
-  height: 48px;
-  width: 48px;
-}
-
-main .show-mobile {
-  display: block;
-}
-
-main .show-desktop {
-  display: none;
 }
 
 main #hero p,
@@ -230,12 +217,87 @@ main #hero .modern-studio .modern-studio-star {
   position: absolute;
 }
 
-/* breakpoints - ponto de mudança com cada device */
-/* desta linha para cima é resolução menor que 576px */
-/* medida css e medida do dispositivo */
-/* Landscape mode */
-ul {
-  padding: 0;
+section div.banner > picture img {
+  cursor: pointer;
+  width: 200px;
+  height: 100%;
+  border-radius: 8%;
+  padding: 0.4em;
+}
+
+#carousel {
+  display: flex;
+  overflow-x: auto;
+  margin: 0 auto 0 auto;
+  width: 80vw;
+  height: fit-content;
+  align-items: center;
+}
+
+section#humor {
+  display: grid;
+  grid-template-columns: 236px;
+  margin-left: 2.5em;
+  margin-bottom: 1.5em;
+}
+section#humor img {
+  background-color: #fff;
+  border-radius: 100%;
+}
+section#humor h2 {
+  color: #9c44d7;
+  margin: 0 4px 0.6em 4px;
+}
+section#humor button {
+  padding: 2em;
+  opacity: 0.72;
+  border-radius: 50%;
+}
+
+.music-type {
+  height: 232px;
+  width: 232px;
+  background-image: url("../images/coqueiro.png");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music-type button:hover {
+  cursor: pointer;
+}
+
+.music-type2 {
+  height: 232px;
+  width: 232px;
+  background-image: url("../images/treino.png");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.music-type2 button:hover {
+  cursor: pointer;
+}
+
+.music-type3 {
+  display: none;
+}
+
+.music-type4 {
+  display: none;
+}
+
+.music-type5 {
+  display: none;
+}
+
+.music-type6 {
+  display: none;
 }
 
 section#mix-card {
@@ -315,6 +377,25 @@ section#new p {
   color: #206240;
 }
 
+section#new div#grid-eletro {
+  margin-left: 6%;
+  display: grid;
+  grid-template-columns: repeat(2, 145px);
+}
+section#new div#grid-eletro a {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+section#new div#grid-eletro img {
+  height: 125px;
+  border-radius: 6px;
+}
+section#new div#grid-eletro img:hover {
+  transform: scale(1.04);
+}
+
 section#today > h2 {
   margin-left: 6%;
   color: #9c44d7;
@@ -329,21 +410,6 @@ section#today {
 section#today p {
   margin-left: 6%;
   color: #201919;
-}
-
-section#rotine {
-  margin-top: -5%;
-  padding: 5%;
-}
-
-section#rotine > h2 {
-  margin-left: 6%;
-  color: #206240;
-}
-
-section#rotine p {
-  margin-left: 6%;
-  color: #525252;
 }
 
 section#today div#text {
@@ -389,6 +455,81 @@ section#today div#list-song div:nth-child(3) {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+h2 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/epilogue/Epilogue-Black.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("../fonts/epilogue/Epilogue-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("../fonts/epilogue/Epilogue-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+  min-height: 400px;
+  background-color: #f4d6f5;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body ul li {
+  list-style: none;
+}
+
+header > div#container > div > img {
+  height: 48px;
+  width: 48px;
+}
+
+main .show-mobile {
+  display: block;
+}
+
+main .show-desktop {
+  display: none;
+}
+
+ul {
+  padding: 0;
+}
+
+section#rotine {
+  margin-top: -5%;
+  padding: 5%;
+}
+
+section#rotine > h2 {
+  margin-left: 6%;
+  color: #206240;
+}
+
+section#rotine p {
+  margin-left: 6%;
+  color: #525252;
 }
 
 @keyframes shake {
@@ -437,76 +578,6 @@ section#today div#list-song div:nth-child(3) {
   transform: translateY(0);
   transition: opacity 0.25s;
   transform: 0.25s;
-}
-
-section#new div#grid-eletro {
-  margin-left: 6%;
-  display: grid;
-  grid-template-columns: repeat(2, 145px);
-}
-section#new div#grid-eletro img {
-  height: 125px;
-  border-radius: 6px;
-}
-
-section#humor {
-  display: grid;
-  grid-template-columns: 236px;
-  margin-left: 2.5em;
-  margin-bottom: 1.5em;
-}
-section#humor img {
-  background-color: #fff;
-  border-radius: 100%;
-}
-section#humor h2 {
-  color: #9c44d7;
-  margin: 0 4px 0.6em 4px;
-}
-section#humor button {
-  padding: 2em;
-  opacity: 0.72;
-  border-radius: 50%;
-}
-
-.music-type {
-  height: 232px;
-  width: 232px;
-  background-image: url("../images/coqueiro.png");
-  background-repeat: no-repeat;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.music-type2 {
-  height: 232px;
-  width: 232px;
-  background-image: url("../images/treino.png");
-  background-repeat: no-repeat;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.music-type3 {
-  display: none;
-}
-
-.music-type4 {
-  display: none;
-}
-
-.music-type5 {
-  display: none;
-}
-
-.music-type6 {
-  display: none;
 }
 
 footer div {

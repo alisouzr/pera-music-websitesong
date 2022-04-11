@@ -1,0 +1,74 @@
+section#humor {
+    display: grid;
+    grid-template-columns: 236px;
+    margin-left: 2.5em;
+    margin-bottom: 1.5em;
+
+    img {
+        background-color: #fff;
+        border-radius: 100%;
+    }
+
+    h2 {
+        color: #9c44d7;
+        margin: 0 4px .6em 4px;
+    }
+
+    button {
+        padding: 2em;
+        opacity: 0.72;
+        border-radius: 50%;
+    }
+}
+
+.music-type {
+    height: 232px;
+    width: 232px;
+    background-image: url("../images/coqueiro.png");
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.music-type2 {
+    height: 232px;
+    width: 232px;
+    background-image: url("../images/treino.png");
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.music-type3 {
+    display: none;
+}
+
+.music-type4 {
+    display: none;
+}
+
+.music-type5 {
+    display: none;
+}
+
+.music-type6 {
+    display: none;
+}

@@ -76,6 +76,9 @@
     justify-content: center;
     align-items: center;
   }
+  .music-type5 button:hover {
+    cursor: pointer;
+  }
 
   .music-type6 {
     height: 232px;
@@ -142,6 +145,9 @@
     justify-content: center;
     align-items: center;
   }
+  .music-type4 button:hover {
+    cursor: pointer;
+  }
 
   .music-type5 {
     display: none;
@@ -183,6 +189,7 @@
   main .show-desktop {
     display: flex;
     align-items: center;
+    font-size: 16px;
   }
 
   main header > #container nav ul {
@@ -194,11 +201,11 @@
   }
 
   main header > #container nav a {
-    color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-weight: bold;
     font-size: 1em;
+    color: #9c44d7;
   }
 
   main header > #container > a {
@@ -227,6 +234,9 @@
 
   main #hero .button-group button {
     cursor: pointer;
+  }
+  main #hero .button-group button:hover {
+    background-color: #d69ffa;
   }
 
   /* section div.banner > picture {
@@ -386,6 +396,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .music-type5 button:hover {
+    cursor: pointer;
   }
 
   .music-type6 {
@@ -558,6 +571,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .music-type6 button:hover {
+    cursor: pointer;
   }
 
   section div.banner picture {

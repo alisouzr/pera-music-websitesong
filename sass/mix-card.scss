@@ -1,0 +1,50 @@
+section#mix-card {
+    margin-top: -5%;
+    padding: 5%;
+}
+
+section#mix-card a>h2 {
+    color: #206240;
+    padding: 10px 0;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+section#mix-card ul li img {
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    opacity: .6;
+}
+
+section#mix-card ul li>div {
+    padding: 10px;
+    border: solid #BC6BF2 1px;
+    border-radius: .4em;
+}
+
+#carousel-2 {
+    display: flex;
+    overflow-x: auto;
+    margin-left: 6%;
+    align-items: center;
+    margin-right: 6%;
+}
+
+section#mix-card>h2 {
+    color: #9c44d7;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 4px 2% 4px 6%;
+    letter-spacing: 2px;
+}
+
+section#mix-card li {
+    margin-bottom: 1em;
+}
+
+section#mix-card li+li {
+    margin-left: 10px;
+}
