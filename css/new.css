@@ -28,7 +28,7 @@ section#new p {
 section#new div#grid-eletro {
   margin-left: 6%;
   display: grid;
-  grid-template-columns: repeat(2, 145px);
+  grid-template-columns: repeat(2, 138px);
 }
 section#new div#grid-eletro a {
   display: flex;

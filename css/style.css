@@ -46,15 +46,26 @@
   transform: 0.25s;
 }
 
-main header button {
+body.open-menu {
+  overflow: hidden;
+}
+body.open-menu header .menu-mobile {
+  right: 0;
+}
+body.open-menu header .overlay {
+  display: flex;
+}
+body main header button {
   width: 48px;
   height: 48px;
   border: 1px solid rgba(255, 255, 255, 0.1882352941);
   border-radius: 6px;
   background-color: unset;
   background-color: none;
+  justify-content: center;
+  align-items: center;
 }
-main header.header-top-site {
+body main header.header-top-site {
   display: flex;
   width: 100%;
   height: 80px;
@@ -67,30 +78,69 @@ main header.header-top-site {
   transition-duration: 0.5s;
   background: linear-gradient(rgba(188, 107, 242, 0), rgba(188, 107, 242, 0));
 }
-main header.header-top-site.scroll {
+body main header.header-top-site.scroll {
   top: -80px;
   transform: translateY(80px);
   transition-duration: 0.5s;
   background: #9c44d7;
 }
-main header > div#container {
+body main header > div#container {
   z-index: 1;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-main header > div#container > div {
+body main header > div#container > div {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-main header > div#container > div > p {
+body main header > div#container > div > p {
   margin: 0 0 0 14px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.4em;
   letter-spacing: 0.2em;
   color: #9c44d7;
+}
+body main header .overlay {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5647058824);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11;
+  overflow: hidden;
+}
+body main header .menu-mobile {
+  width: 242px;
+  height: 100vh;
+  background-color: #6e3a91;
+  position: fixed;
+  right: -242px;
+  top: 0;
+  z-index: 15;
+  padding: 10%;
+  flex-direction: row-reverse;
+  transition: all ease 0.8s;
+}
+body main header .menu-mobile ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main header .menu-mobile ul li {
+  margin-top: 20px;
+}
+body main header .menu-mobile ul li a {
+  color: #fff;
+  font-size: 18px;
+}
+body main .show-mobile {
+  display: flex;
 }
 
 main section#hero {
@@ -149,6 +199,9 @@ main #hero .button-group button {
   padding: 1em 2em;
   color: #fff;
   border-radius: 8px;
+}
+main #hero .button-group button:hover {
+  cursor: pointer;
 }
 
 main #hero .modern-studio .modern-studio-star {
@@ -318,7 +371,7 @@ section#new p {
 section#new div#grid-eletro {
   margin-left: 6%;
   display: grid;
-  grid-template-columns: repeat(2, 145px);
+  grid-template-columns: repeat(2, 138px);
 }
 section#new div#grid-eletro a {
   display: flex;
@@ -351,7 +404,7 @@ section#today p {
 }
 
 section#today div#text {
-  margin-left: 4%;
+  margin-left: 2%;
   width: 100%;
 }
 
@@ -389,10 +442,20 @@ section#today img#play {
 }
 
 section#today div#list-song div:nth-child(3) {
-  width: 20%;
+  width: 74%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+section#today #playAndHeart {
+  display: flex;
+}
+section#today #playAndHeart > img {
+  width: 52%;
+}
+section#today #playAndHeart #borderFavorite:hover {
+  cursor: pointer;
 }
 
 section#rotine {
@@ -440,7 +503,7 @@ header > div#container > div > img {
 }
 
 main .show-mobile {
-  display: block;
+  display: flex;
 }
 
 main .show-desktop {

@@ -1,55 +1,120 @@
-main {
-    header {
-        button {
-            width: 48px;
-            height: 48px;
-            border: 1px solid #ffffff30;
-            border-radius: 6px;
-            background-color: unset;
-            background-color: none;
-        }
+body {
+    &.open-menu {
+        overflow: hidden;
 
-        &.header-top-site {
-            display: flex;
-            width: 100%;
-            height: 80px;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 23px;
-            color: #fff;
-            position: fixed;
-            z-index: 10;
-            transition-duration: 0.5s;
-            background: linear-gradient(#BC6BF200, #BC6BF200);
+        header {
+            .menu-mobile {
+                right: 0;
+            }
 
-            &.scroll {
-                top: -80px;
-                transform: translateY(80px);
-                transition-duration: 0.5s;
-                background: #9c44d7;
+            .overlay {
+                display: flex;
             }
         }
+    }
 
-        &>div#container {
-            z-index: 1;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
+    main {
+        header {
 
-            &>div {
-                display: flex;
+
+            button {
+                width: 48px;
+                height: 48px;
+                border: 1px solid #ffffff30;
+                border-radius: 6px;
+                background-color: unset;
+                background-color: none;
+                justify-content: center;
                 align-items: center;
-                cursor: pointer;
+            }
 
-                &>p {
-                    margin: 0 0 0 14px;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-weight: bold;
-                    font-size: 1.4em;
-                    letter-spacing: .2em;
-                    color: #9c44d7;
+            &.header-top-site {
+                display: flex;
+                width: 100%;
+                height: 80px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 16px 23px;
+                color: #fff;
+                position: fixed;
+                z-index: 10;
+                transition-duration: 0.5s;
+                background: linear-gradient(#BC6BF200, #BC6BF200);
+
+                &.scroll {
+                    top: -80px;
+                    transform: translateY(80px);
+                    transition-duration: 0.5s;
+                    background: #9c44d7;
                 }
             }
+
+            &>div#container {
+                z-index: 1;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                &>div {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &>p {
+                        margin: 0 0 0 14px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        font-size: 1.4em;
+                        letter-spacing: .2em;
+                        color: #9c44d7;
+                    }
+                }
+            }
+
+            .overlay {
+                display: none;
+                width: 100%;
+                height: 100vh;
+                background-color: #00000090;
+                position: fixed;
+                left: 0;
+                top: 0;
+                z-index: 11;
+                overflow: hidden;
+            }
+
+            .menu-mobile {
+                width: 242px;
+                height: 100vh;
+                background-color: #6e3a91;
+                position: fixed;
+                right: -242px;
+                top: 0;
+                z-index: 15;
+                padding: 10%;
+                flex-direction: row-reverse;
+                transition: all ease 0.8s;
+
+                ul {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    li {
+                        margin-top: 20px;
+
+                        a {
+                            color: #fff;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .show-mobile {
+            display: flex;
         }
     }
 }

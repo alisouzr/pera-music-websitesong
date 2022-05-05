@@ -1,3 +1,14 @@
+@media (min-width: 375px) {
+  section#today #playAndHeart {
+    display: flex;
+  }
+  section#today #playAndHeart > img {
+    width: 30%;
+  }
+  section#today #playAndHeart #borderFavorite:hover {
+    cursor: pointer;
+  }
+}
 @media (min-width: 500px) {
   section#new div#grid-eletro {
     margin-left: 6%;
@@ -36,6 +47,16 @@
   }
 }
 @media (min-width: 768px) {
+  section#today #playAndHeart {
+    display: flex;
+  }
+  section#today #playAndHeart > img {
+    width: 15%;
+  }
+  section#today #playAndHeart #borderFavorite:hover {
+    cursor: pointer;
+  }
+
   section#new div#grid-eletro {
     margin-left: 6%;
     display: grid;
@@ -104,6 +125,13 @@
   }
 }
 @media (min-width: 960px) {
+  body main .show-mobile {
+    display: none;
+  }
+  body main header button {
+    width: initial;
+  }
+
   section#new div#grid-eletro {
     margin-left: 6%;
     display: grid;
@@ -204,6 +232,11 @@
     font-weight: bold;
     font-size: 1em;
     color: #9c44d7;
+  }
+  main header > #container nav a:hover {
+    text-decoration: 3.2px underline wavy;
+    text-decoration-color: white;
+    text-underline-position: under;
   }
 
   main header > #container > a {

@@ -69,6 +69,10 @@ main #hero .button-group button {
     padding: 1em 2em;
     color: #fff;
     border-radius: 8px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 main #hero .modern-studio .modern-studio-star {

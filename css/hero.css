@@ -55,6 +55,9 @@ main #hero .button-group button {
   color: #fff;
   border-radius: 8px;
 }
+main #hero .button-group button:hover {
+  cursor: pointer;
+}
 
 main #hero .modern-studio .modern-studio-star {
   position: absolute;

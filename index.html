@@ -19,7 +19,7 @@
                     <img src="PERA.svg" alt="Logo Pera Music">
                     <p class="title">Pera Music</p>
                 </div>
-                <button title="menu" type="button" class="show-mobile">
+                <button title="menu" type="button" class="show-mobile" id="open-menu">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFF">
                         <path d="M0 0h24v24H0z" fill="none" />
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
@@ -30,7 +30,7 @@
                         <li><a class="title" href="#about">Search</a></li>
                         <li><a class="title" href="#services">Services</a></li>
                         <li><a class="title" href="#pricing">Random</a></li>
-                        <li><a class="title" href="#blog">About</a></li>
+                        <li><a class="title" href="#blog">Favorites</a></li>
                     </ul>
                 </nav>
 
@@ -43,6 +43,21 @@
                 </button>
 
             </div>
+            <div class="show-mobile overlay"></div>
+            <nav class="show-mobile menu-mobile">
+                <svg id="close-menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                    fill="#000000">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                </svg>
+                <ul>
+                    <li><a href="#about">Search</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Random</a></li>
+                    <li><a href="#blog">Favorites</a></li>
+                </ul>
+            </nav>
         </header>
 
         <section id="hero">
@@ -297,10 +312,10 @@
                         <h3>Meet Me In Our Spot</h3>
                         <h4>Music - WILLOW</h4>
                     </div>
-                    <div>
+                    <div id="playAndHeart">
+                        <img id="borderFavorite" src="./favorite/border_favorite_2x.png" alt="">
                         <a aria-label="Meet Me In Our Spot" href="https://www.youtube.com/watch?v=2dTMIH5gCHg">
-                            <img id="play" src="./play.svg" alt="">
-                        </a>
+                            <img id="play" src="./play.svg" alt=""></a>
                     </div>
                 </div>
 
@@ -312,7 +327,8 @@
                         <h3>Este Corazón</h3>
                         <h4>Music - RBD</h4>
                     </div>
-                    <div>
+                    <div id="playAndHeart">
+                        <img id="borderFavorite" src="./favorite/border_favorite_2x.png" alt="">
                         <a aria-label="Este Corazón" href="https://www.youtube.com/watch?v=dqxmiGPXVbY">
                             <img id="play" src="./play.svg" alt="">
                         </a>
@@ -327,7 +343,8 @@
                         <h3>Are You Bored Yet?</h3>
                         <h4>Music - WALLOWS</h4>
                     </div>
-                    <div>
+                    <div id="playAndHeart">
+                        <img id="borderFavorite" src="./favorite/border_favorite_2x.png" alt="">
                         <a aria-label="Are You Bored Yet?" href="https://www.youtube.com/watch?v=wIgmyE5Juzw">
                             <img id="play" src="./play.svg" alt="">
                         </a>
@@ -342,7 +359,8 @@
                         <h3>traitor</h3>
                         <h4>Music - Olivia Rodrigo</h4>
                     </div>
-                    <div>
+                    <div id="playAndHeart">
+                        <img id="borderFavorite" src="./favorite/border_favorite_2x.png" alt="">
                         <a aria-label="Traitor" href="https://www.youtube.com/watch?v=CRrf3h9vhp8">
                             <img id="play" src="./play.svg" alt="">
                         </a>
@@ -357,7 +375,8 @@
                         <h3>Angels Like You</h3>
                         <h4>Music - Miley Cyrus</h4>
                     </div>
-                    <div>
+                    <div id="playAndHeart">
+                        <img id="borderFavorite" src="./favorite/border_favorite_2x.png" alt="">
                         <a aria-label="Angels Like You" href="https://www.youtube.com/watch?v=Y0ORhLyJWuc">
                             <img id="play" src="./play.svg" alt="">
                         </a>
@@ -372,7 +391,8 @@
                         <h3>July</h3>
                         <h4>Music - Noah Cyrus</h4>
                     </div>
-                    <div>
+                    <div id="playAndHeart">
+                        <img id="borderFavorite" src="./favorite/border_favorite_2x.png" alt="">
                         <a aria-label="July" href="https://www.youtube.com/watch?v=KhjTa_7Nq6Y">
                             <img id="play" src="./play.svg" alt="">
                         </a>
@@ -387,7 +407,8 @@
                         <h3>As It Was</h3>
                         <h4>Music - Harry Styles</h4>
                     </div>
-                    <div>
+                    <div id="playAndHeart">
+                        <img id="borderFavorite" src="./favorite/border_favorite_2x.png" alt="">
                         <a aria-label="As It Was" href="https://www.youtube.com/watch?v=H5v3kku4y6Q">
                             <img id="play" src="./play.svg" alt="">
                         </a>
@@ -407,24 +428,9 @@
 
     </main>
 
-    <script>
-        document.addEventListener('scroll', (e) => {
-            const scroll = window.scrollY;
-            const header = document.querySelector('.header-top-site');
-            if (scroll > 0) {
-                header.classList.add('scroll');
-                document.querySelectorAll('.title').forEach(function (element) {
-                    element.style.color = '#FFFFFF';
-                })
-            } else {
-                header.classList.remove('scroll');
-                document.querySelectorAll('.title').forEach(function (element) {
-                    element.style.color = '#9c44d7';
-                })
-
-            }
-        });
-    </script>
+    <script src="/script/scrollPage.js"></script>
+    <script src="/script/favoriteSongs.js"></script>
+    <script src="/script/menu.js"></script>
 
 </body>
 
