@@ -29,17 +29,15 @@ body {
             }
 
             &.header-top-site {
+                top: 0;
                 display: flex;
-                width: 100%;
+                width: 100vw;
                 height: 80px;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 align-items: center;
-                padding: 16px 23px;
-                color: #fff;
                 position: fixed;
                 z-index: 10;
                 transition-duration: 0.5s;
-                background: linear-gradient(#BC6BF200, #BC6BF200);
 
                 &.scroll {
                     top: -80px;
