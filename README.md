@@ -14,4 +14,4 @@ I created this project from a challenge, it was proposed to create a music websi
   <img align="center" alt="SASS" height="30" width="70" src="https://miro.medium.com/max/1400/1*FeiTcE7xAIKhNrRa-2_oiQ.png">
   </div>
 <br>
-to access it -> https://alisouzr.github.io/pera-music-websitesong/
+to access it -> https://pera-music-websitesong.vercel.app/
