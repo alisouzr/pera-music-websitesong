@@ -66,17 +66,15 @@ body main header button {
   align-items: center;
 }
 body main header.header-top-site {
+  top: 0;
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 80px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 16px 23px;
-  color: #fff;
   position: fixed;
   z-index: 10;
   transition-duration: 0.5s;
-  background: linear-gradient(rgba(188, 107, 242, 0), rgba(188, 107, 242, 0));
 }
 body main header.header-top-site.scroll {
   top: -80px;
